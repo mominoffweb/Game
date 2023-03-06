@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(#9e2c78,#1a5199);
+    color: #fff;
+    font-family: "Arial", sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    background-color: rgba(241, 232, 232, 0.2);
+    border-radius: 10px;
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.select {
+    width: 80px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+.select-wrapper {
+    position: relative;
+}
+.select-wrapper::before {
+    content: "\25bc";
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #123456;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 44px;
+}
+
+.words {
+    font-size: 32px;
+    user-select: none;
+}
+
+input {
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    font-size: 32px;
+    padding: 12px ;
+    user-select: none;
+    border: 4px solid #123456;
+}
+
+h5 {
+    font-size: 20px;
+}
+
+.overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.modal {
+    width: 100%;
+    max-width: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #274b74;
+    padding: 50px;
+    text-align: center;
+}
+.modal h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.modal a {
+    display: inline-block;
+    background-color: #123456;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+}
